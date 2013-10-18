@@ -8,6 +8,7 @@
  */
 
 #ifndef MOVING_AVERAGE_H_
+
 #define MOVING_AVERAGE_H_
 
 // Moving average functions

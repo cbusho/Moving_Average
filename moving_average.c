@@ -15,10 +15,12 @@ void getAverage(int array[], int myArray[], int arrayLength, int sampleNum){
 	{													//i.e. for an array with length ten averaging four numbers at a time
 		int j = 0;										//0-3, 1-4, 2-5...6-9 is 10-4+1 samples of numbers or 7 samples
 		int summer = 0;
+
 		for (j = 0; j < sampleNum; j++)	//sums the first sampleNum numbers in array
 		{
 			summer += array[j+i];
 		}
+
 		myArray[i] = summer/sampleNum;
 	}
 
@@ -31,12 +33,12 @@ int max(int array[], int arrayLength){
 
 	for (i = 0; i < arrayLength; i++)
 	{
-			if (array[i] > newMax){
-				newMax = array[i];
-			}
+        if (array[i] > newMax){
+            newMax = array[i];
+        }
 	}
 
-		return newMax;
+    return newMax;
 }
 
 int min(int array[], int arrayLength){
@@ -45,12 +47,12 @@ int min(int array[], int arrayLength){
 												// so first number in array is lower
 	for (i = 0; i < arrayLength; i++)
 	{
-			if (array[i] < newMin){
-				newMin = array[i];
-			}
+        if (array[i] < newMin){
+            newMin = array[i];
+        }
 	}
 
-		return newMin;
+    return newMin;
 }
 
 
@@ -62,13 +64,15 @@ int range(int array[], int arrayLength){
 
 	for (i = 0; i < arrayLength; i++)
 	{
-			if (array[i] > newMax){
-				newMax = array[i];
-			}
-			if (array[i] < newMin){
-				newMin = array[i];
-			}
+        if (array[i] > newMax){
+            newMax = array[i];
+        }
+
+        if (array[i] < newMin){
+            newMin = array[i];
+        }
 	}
-		newRange = newMax - newMin;
-		return newRange;
+
+    newRange = newMax - newMin;
+    return newRange;
 }

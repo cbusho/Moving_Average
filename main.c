@@ -8,14 +8,13 @@
 
 #include "moving_average.h"
 #include <msp430.h> 
+
 #define ARRAYLENGTH 10	//had to define to use for myArray declaration length
 #define SAMPLES	4
 
-/*
- * main.c
- */
 void main(void) {
     WDTCTL = WDTPW | WDTHOLD;	// Stop watchdog timer
+
     int maximum = 0;
     int minimum = 0;
     int myRange = 0;
